@@ -1,0 +1,20 @@
+git init
+git branch -m master main
+git add .
+git commit -m "first commit"
+git switch -b feature-local-test
+git switch -c feature-local-test
+git add cloud.py
+git commit -m "feature test"
+git switch main
+git add cloud.py
+git commit "feature test"
+git commit -m "feature test"
+git merge feature-local-test
+git commit -m "merge conflict resolve"
+git commit -m "merge conflict resolve"
+git add cloud.py
+git commit -m "merge conflict resolve"
+git remote add origin https://github.com/Sl0wYx/ca1ex2-repo.git
+git push -u origin main
+git pull
